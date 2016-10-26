@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="Cheesesquare\Cheesesquare.csproj">
+  <MonoDevelop.Ide.ItemProperties.Cheesesquare AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.022CMU2139001955" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Cheesesquare\Resources\values\dimens.xml">
+    <Files>
+      <File FileName="Cheesesquare\CheeseListFragment.cs" Line="122" Column="27" />
+      <File FileName="Cheesesquare.UITests\Tests.cs" Line="3" Column="1" />
+      <File FileName="Cheesesquare\MainActivity.cs" Line="78" Column="42" />
+      <File FileName="Cheesesquare\Resources\menu\drawer_view.xml" Line="1" Column="1" />
+      <File FileName="Cheesesquare\Resources\values\dimens.xml" Line="19" Column="9" />
+      <File FileName="Cheesesquare\CheeseDetailActivity.cs" Line="54" Column="13" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
