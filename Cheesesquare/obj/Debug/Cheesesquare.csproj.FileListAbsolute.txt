@@ -122,7 +122,6 @@ C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\drawab
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\drawable-xxhdpi\ic_menu.png
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\drawable-xxxhdpi\ic_done.png
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\drawable-xxxhdpi\ic_menu.png
-C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\layout\activity_detail.xml
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\layout\activity_main.xml
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\layout\fragment_cheese_list.xml
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\layout\include_list_viewpager.xml

@@ -16,7 +16,7 @@ using System.Collections.Generic;
 
 namespace Cheesesquare
 {
-    [Activity (Label = "Cheesesquare", MainLauncher = true)]
+    [Activity (Label = "@string/app_name", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {        
         DrawerLayout drawerLayout;
@@ -30,28 +30,23 @@ namespace Cheesesquare
             var toolbar = FindViewById<V7Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar (toolbar);
 
-            SupportActionBar.SetHomeAsUpIndicator (Resource.Drawable.ic_menu);
-            SupportActionBar.SetDisplayHomeAsUpEnabled (true);
-
             drawerLayout = FindViewById<DrawerLayout> (Resource.Id.drawer_layout);
 
-            var navigationView = FindViewById<NavigationView> (Resource.Id.nav_view);
-            if (navigationView != null)
-                setupDrawerContent(navigationView);
+            //var navigationView = FindViewById<NavigationView> (Resource.Id.nav_view);
+            //if (navigationView != null)
+            //    setupDrawerContent(navigationView);
 
             var viewPager = FindViewById<Android.Support.V4.View.ViewPager> (Resource.Id.viewpager);
-            if (viewPager != null)
-                setupViewPager(viewPager);
+            //if (viewPager != null)
+            //    //setupViewPager(viewPager);
 
             var fab = FindViewById<FloatingActionButton> (Resource.Id.fab);
             fab.Click += (sender, e) => {
-                // Show a snackbar
-                Snackbar.Make (fab, "Here's a snackbar!", Snackbar.LengthLong).SetAction ("Action",                    
-                    v => Console.WriteLine ("Action handler")).Show ();
+                // Action of FAB
             };
 
-            var tabLayout = FindViewById<TabLayout> (Resource.Id.tabs);
-            tabLayout.SetupWithViewPager (viewPager);
+            //var tabLayout = FindViewById<TabLayout> (Resource.Id.tabs);
+            //tabLayout.SetupWithViewPager (viewPager);
         }
             
         public override bool OnCreateOptionsMenu (IMenu menu) 
@@ -70,71 +65,72 @@ namespace Cheesesquare
             return base.OnOptionsItemSelected (item);
         }
 
-        void setupViewPager (Android.Support.V4.View.ViewPager viewPager) 
+        void setupDrawerContent(NavigationView navigationView)
         {
-            var adapter = new Adapter (SupportFragmentManager);
-            adapter.AddFragment (new CheeseListFragment (), "Category 1");
-            adapter.AddFragment (new CheeseListFragment (), "Category 2");
-            adapter.AddFragment (new CheeseListFragment (), "Category 3");
-            viewPager.Adapter = adapter;
-        }
-
-        void setupDrawerContent(NavigationView navigationView) 
-        {
-            navigationView.NavigationItemSelected += (sender, e) => {
-                e.MenuItem.SetChecked (true);
-                drawerLayout.CloseDrawers ();
+            navigationView.NavigationItemSelected += (sender, e) =>
+            {
+                e.MenuItem.SetChecked(true);
+                drawerLayout.CloseDrawers();
             };
         }
+        //void setupViewPager (Android.Support.V4.View.ViewPager viewPager) 
+        //{
+        //    var adapter = new Adapter (SupportFragmentManager);
+        //    adapter.AddFragment (new CheeseListFragment (), "@string/tab_1");
+        //    adapter.AddFragment (new CheeseListFragment (), "@string/tab_2");
+        //    adapter.AddFragment (new CheeseListFragment (), "@string/tab_3");
+        //    viewPager.Adapter = adapter;
+        //}
 
-        class Adapter : Android.Support.V4.App.FragmentPagerAdapter 
-        {
-            List<V4Fragment> fragments = new List<V4Fragment> ();
-            List<string> fragmentTitles = new List<string> ();
+       
+        //class Adapter : Android.Support.V4.App.FragmentPagerAdapter 
+        //{
+        //    List<V4Fragment> fragments = new List<V4Fragment> ();
+        //    List<string> fragmentTitles = new List<string> ();
 
-            public Adapter (V4FragmentManager fm) : base (fm)
-            {
-            }
+        //    public Adapter (V4FragmentManager fm) : base (fm)
+        //    {
+        //    }
 
-            public void AddFragment (V4Fragment fragment, String title) 
-            {
-                fragments.Add(fragment);
-                fragmentTitles.Add(title);
-            }
+        //    public void AddFragment (V4Fragment fragment, String title) 
+        //    {
+        //        fragments.Add(fragment);
+        //        fragmentTitles.Add(title);
+        //    }
                 
-            public override V4Fragment GetItem(int position) 
-            {
-                return fragments [position];
-            }
+        //    public override V4Fragment GetItem(int position) 
+        //    {
+        //        return fragments [position];
+        //    }
 
-            public override int Count {
-                get { return fragments.Count; }
-            }
+        //    public override int Count {
+        //        get { return fragments.Count; }
+        //    }
 
-            public override Java.Lang.ICharSequence GetPageTitleFormatted (int position)
-            {
-                return new Java.Lang.String (fragmentTitles [position]);
-            }
+        //    public override Java.Lang.ICharSequence GetPageTitleFormatted (int position)
+        //    {
+        //        return new Java.Lang.String (fragmentTitles [position]);
+        //    }
 
-        }
+        //}
     }
 
-    public class ClickListener : Java.Lang.Object, View.IOnClickListener
-    {
-        public ClickListener (Action<View> handler)
-        {
-            Handler = handler;
-        }
+    //public class ClickListener : Java.Lang.Object, View.IOnClickListener
+    //{
+    //    public ClickListener (Action<View> handler)
+    //    {
+    //        Handler = handler;
+    //    }
 
-        public Action<View> Handler { get; set; }
+    //    public Action<View> Handler { get; set; }
 
-        public void OnClick (View v)
-        {
-            var h = Handler;
-            if (h != null)
-                h (v);
-        }
-    }
+    //    public void OnClick (View v)
+    //    {
+    //        var h = Handler;
+    //        if (h != null)
+    //            h (v);
+    //    }
+    //}
 }
 
 
