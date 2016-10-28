@@ -73,9 +73,6 @@ C:\Users\sasho\Documents\Projects\second_AR\Components\xamandroidsupportdesign-2
 C:\Users\sasho\Documents\Projects\second_AR\Components\xamandroidsupportdesign-23.4.0.1\samples\Cheesesquare\Cheesesquare\obj\Debug\uploadflags.txt
 C:\Users\sasho\Documents\Projects\second_AR\Components\xamandroidsupportdesign-23.4.0.1\samples\Cheesesquare\Cheesesquare\obj\Debug\Cheesesquare.dll.mdb
 C:\Users\sasho\Documents\Projects\second_AR\Components\xamandroidsupportdesign-23.4.0.1\samples\Cheesesquare\Cheesesquare\bin\Debug\Cheesesquare.dll.mdb
-C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\Cheesesquare.csprojResolveAssemblyReference.cache
-C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\Cheesesquare.dll
-C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\Cheesesquare.pdb
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\bin\Debug\Cheesesquare.dll
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\bin\Debug\Cheesesquare.pdb
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\bin\Debug\com.sample.cheesesquare.apk
@@ -85,6 +82,8 @@ C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\bin\Debug\Xamarin.An
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\bin\Debug\Xamarin.Android.Support.v7.CardView.dll
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\bin\Debug\Xamarin.Android.Support.v7.RecyclerView.dll
+C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\Cheesesquare.dll
+C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\Cheesesquare.pdb
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\android\bin\com.sample.cheesesquare.apk
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\values\strings.xml
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\drawable\cheese_1.jpg
@@ -123,11 +122,9 @@ C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\drawab
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\drawable-xxxhdpi\ic_done.png
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\drawable-xxxhdpi\ic_menu.png
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\layout\activity_main.xml
-C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\layout\fragment_cheese_list.xml
+C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\layout\fragment_outcome_list.xml
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\layout\include_list_viewpager.xml
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\layout\list_item.xml
-C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\layout\nav_header.xml
-C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\menu\drawer_view.xml
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\menu\sample_actions.xml
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\mipmap-hdpi\ic_launcher.png
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\mipmap-mdpi\ic_launcher.png
@@ -144,6 +141,7 @@ C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\drawab
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\drawable\cheese_4_small.jpg
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\drawable\cheese_5_small.jpg
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\drawable\icon.png
+C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\layout\out_incomelayout.xml
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\R.cs.flag
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\uploadflags.txt
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\bin\Debug\Cheesesquare.dll.mdb

@@ -1993,8 +1993,8 @@ namespace Cheesesquare
 			// aapt resource value: 0x7f07003c
 			public const int action_mode_close_button = 2131165244;
 			
-			// aapt resource value: 0x7f070088
-			public const int action_settings = 2131165320;
+			// aapt resource value: 0x7f070089
+			public const int action_settings = 2131165321;
 			
 			// aapt resource value: 0x7f07003d
 			public const int activity_chooser_view_content = 2131165245;
@@ -2155,6 +2155,9 @@ namespace Cheesesquare
 			// aapt resource value: 0x7f07000b
 			public const int listMode = 2131165195;
 			
+			// aapt resource value: 0x7f070073
+			public const int listView1 = 2131165299;
+			
 			// aapt resource value: 0x7f070041
 			public const int list_item = 2131165249;
 			
@@ -2202,9 +2205,6 @@ namespace Cheesesquare
 			
 			// aapt resource value: 0x7f070054
 			public const int radio = 2131165268;
-			
-			// aapt resource value: 0x7f070073
-			public const int recyclerview = 2131165299;
 			
 			// aapt resource value: 0x7f070030
 			public const int right = 2131165232;
@@ -2316,6 +2316,9 @@ namespace Cheesesquare
 			
 			// aapt resource value: 0x7f070083
 			public const int text2 = 2131165315;
+			
+			// aapt resource value: 0x7f070088
+			public const int textForName = 2131165320;
 			
 			// aapt resource value: 0x7f07004d
 			public const int textSpacerNoButtons = 2131165261;
@@ -2521,7 +2524,7 @@ namespace Cheesesquare
 			public const int design_navigation_menu_item = 2130968613;
 			
 			// aapt resource value: 0x7f040026
-			public const int fragment_cheese_list = 2130968614;
+			public const int fragment_outcome_list = 2130968614;
 			
 			// aapt resource value: 0x7f040027
 			public const int include_list_viewpager = 2130968615;
@@ -2554,16 +2557,19 @@ namespace Cheesesquare
 			public const int notification_template_part_time = 2130968624;
 			
 			// aapt resource value: 0x7f040031
-			public const int select_dialog_item_material = 2130968625;
+			public const int out_incomeLayout = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public const int select_dialog_multichoice_material = 2130968626;
+			public const int select_dialog_item_material = 2130968626;
 			
 			// aapt resource value: 0x7f040033
-			public const int select_dialog_singlechoice_material = 2130968627;
+			public const int select_dialog_multichoice_material = 2130968627;
 			
 			// aapt resource value: 0x7f040034
-			public const int support_simple_spinner_dropdown_item = 2130968628;
+			public const int select_dialog_singlechoice_material = 2130968628;
+			
+			// aapt resource value: 0x7f040035
+			public const int support_simple_spinner_dropdown_item = 2130968629;
 			
 			static Layout()
 			{

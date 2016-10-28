@@ -37,16 +37,16 @@ namespace Cheesesquare
             //    setupDrawerContent(navigationView);
 
             var viewPager = FindViewById<Android.Support.V4.View.ViewPager> (Resource.Id.viewpager);
-            //if (viewPager != null)
-            //    //setupViewPager(viewPager);
+            if (viewPager != null)
+                setupViewPager(viewPager);
 
             var fab = FindViewById<FloatingActionButton> (Resource.Id.fab);
             fab.Click += (sender, e) => {
                 // Action of FAB
             };
 
-            //var tabLayout = FindViewById<TabLayout> (Resource.Id.tabs);
-            //tabLayout.SetupWithViewPager (viewPager);
+            var tabLayout = FindViewById<TabLayout> (Resource.Id.tabs);
+            tabLayout.SetupWithViewPager (viewPager);
         }
             
         public override bool OnCreateOptionsMenu (IMenu menu) 
@@ -61,6 +61,7 @@ namespace Cheesesquare
             case Android.Resource.Id.Home:
                 drawerLayout.OpenDrawer (Android.Support.V4.View.GravityCompat.Start);
                 return true;
+                    
             }
             return base.OnOptionsItemSelected (item);
         }
@@ -69,68 +70,67 @@ namespace Cheesesquare
         {
             navigationView.NavigationItemSelected += (sender, e) =>
             {
-                e.MenuItem.SetChecked(true);
-                drawerLayout.CloseDrawers();
+                Toast.MakeText(this, "settings", ToastLength.Short).Show();
             };
         }
-        //void setupViewPager (Android.Support.V4.View.ViewPager viewPager) 
-        //{
-        //    var adapter = new Adapter (SupportFragmentManager);
-        //    adapter.AddFragment (new CheeseListFragment (), "@string/tab_1");
-        //    adapter.AddFragment (new CheeseListFragment (), "@string/tab_2");
-        //    adapter.AddFragment (new CheeseListFragment (), "@string/tab_3");
-        //    viewPager.Adapter = adapter;
-        //}
+        void setupViewPager (Android.Support.V4.View.ViewPager viewPager) 
+        {
+            var adapter = new Adapter (SupportFragmentManager);
+            adapter.AddFragment (new IncomeFragment(), "hello");
+            adapter.AddFragment (new IncomeFragment(), "@string/tab_2");
+            adapter.AddFragment (new IncomeFragment(), "@string/tab_3");
+            viewPager.Adapter = adapter;
+        }
 
        
-        //class Adapter : Android.Support.V4.App.FragmentPagerAdapter 
-        //{
-        //    List<V4Fragment> fragments = new List<V4Fragment> ();
-        //    List<string> fragmentTitles = new List<string> ();
+        class Adapter : Android.Support.V4.App.FragmentPagerAdapter 
+        {
+            List<V4Fragment> fragments = new List<V4Fragment> ();
+            List<string> fragmentTitles = new List<string> ();
 
-        //    public Adapter (V4FragmentManager fm) : base (fm)
-        //    {
-        //    }
+            public Adapter (V4FragmentManager fm) : base (fm)
+            {
+            }
 
-        //    public void AddFragment (V4Fragment fragment, String title) 
-        //    {
-        //        fragments.Add(fragment);
-        //        fragmentTitles.Add(title);
-        //    }
+            public void AddFragment (V4Fragment fragment, String title) 
+            {
+                fragments.Add(fragment);
+                fragmentTitles.Add(title);
+            }
                 
-        //    public override V4Fragment GetItem(int position) 
-        //    {
-        //        return fragments [position];
-        //    }
+            public override V4Fragment GetItem(int position) 
+            {
+                return fragments [position];
+            }
 
-        //    public override int Count {
-        //        get { return fragments.Count; }
-        //    }
+            public override int Count {
+                get { return fragments.Count; }
+            }
 
-        //    public override Java.Lang.ICharSequence GetPageTitleFormatted (int position)
-        //    {
-        //        return new Java.Lang.String (fragmentTitles [position]);
-        //    }
+            public override Java.Lang.ICharSequence GetPageTitleFormatted (int position)
+            {
+                return new Java.Lang.String (fragmentTitles [position]);
+            }
 
-        //}
+        }
     }
 
-    //public class ClickListener : Java.Lang.Object, View.IOnClickListener
-    //{
-    //    public ClickListener (Action<View> handler)
-    //    {
-    //        Handler = handler;
-    //    }
+    public class ClickListener : Java.Lang.Object, View.IOnClickListener
+    {
+        public ClickListener (Action<View> handler)
+        {
+            Handler = handler;
+        }
 
-    //    public Action<View> Handler { get; set; }
+        public Action<View> Handler { get; set; }
 
-    //    public void OnClick (View v)
-    //    {
-    //        var h = Handler;
-    //        if (h != null)
-    //            h (v);
-    //    }
-    //}
+        public void OnClick (View v)
+        {
+            var h = Handler;
+            if (h != null)
+                h (v);
+        }
+    }
 }
 
 
