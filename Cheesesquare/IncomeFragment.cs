@@ -21,7 +21,7 @@ namespace Cheesesquare
         ListAdapter adapter;
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            var v = inflater.Inflate(Resource.Layout.fragment_outcome_list, container, false);
+            var v = inflater.Inflate(Resource.Layout.view_inside_viewPager, container, false);
             listvview = v.FindViewById<ListView>(Resource.Id.listView1);
             string[] names = { "shop", "another", "komynalka" };
             adapter = new ListAdapter(this.Activity,names.ToList());

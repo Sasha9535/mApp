@@ -1,17 +1,20 @@
 ﻿<Properties StartupItem="Cheesesquare\Cheesesquare.csproj">
-  <MonoDevelop.Ide.ItemProperties.Cheesesquare AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.SelectDevice" />
+  <MonoDevelop.Ide.ItemProperties.Cheesesquare AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.022CMU2139001955" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Cheesesquare\CheeseListFragment.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Cheesesquare\MyDialogFragment.cs">
     <Files>
-      <File FileName="Cheesesquare\MainActivity.cs" Line="87" Column="23" />
       <File FileName="Cheesesquare\Cheeses.cs" Line="7" Column="5" />
-      <File FileName="Cheesesquare\CheeseListFragment.cs" Line="20" Column="4" />
+      <File FileName="Cheesesquare\MainActivity.cs" Line="29" Column="13" />
+      <File FileName="Cheesesquare\IncomeFragment.cs" Line="22" Column="9" />
       <File FileName="Cheesesquare\CheeseDetailActivity.cs" Line="65" Column="1" />
-      <File FileName="Cheesesquare\Resources\values\Strings.xml" Line="21" Column="2" />
+      <File FileName="Cheesesquare\MyDialogFragment.cs" Line="79" Column="1" />
+      <File FileName="Cheesesquare\Resources\values\styles.xml" Line="37" Column="28" />
+      <File FileName="Cheesesquare\Resources\anim\slide_right.xml" Line="5" Column="3" />
+      <File FileName="Cheesesquare\Resources\anim\slide_up.xml" Line="3" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
 </Properties>

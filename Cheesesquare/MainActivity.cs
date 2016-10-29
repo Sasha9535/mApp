@@ -13,6 +13,7 @@ using V4FragmentManager = Android.Support.V4.App.FragmentManager;
 using Android.Support.V4.Widget;
 using Android.Support.Design.Widget;
 using System.Collections.Generic;
+using Android.Support.V4.View;
 
 namespace Cheesesquare
 {
@@ -20,7 +21,7 @@ namespace Cheesesquare
     public class MainActivity : AppCompatActivity
     {        
         DrawerLayout drawerLayout;
-               
+        ViewPager viewPager;    
         protected override void OnCreate(Bundle savedInstanceState) 
         {
             base.OnCreate (savedInstanceState);
@@ -36,13 +37,17 @@ namespace Cheesesquare
             //if (navigationView != null)
             //    setupDrawerContent(navigationView);
 
-            var viewPager = FindViewById<Android.Support.V4.View.ViewPager> (Resource.Id.viewpager);
+            viewPager = FindViewById<Android.Support.V4.View.ViewPager> (Resource.Id.viewpager);
             if (viewPager != null)
                 setupViewPager(viewPager);
 
             var fab = FindViewById<FloatingActionButton> (Resource.Id.fab);
-            fab.Click += (sender, e) => {
+            fab.Click += (object sender,EventArgs e) => {
                 // Action of FAB
+                var curItem = viewPager.CurrentItem;
+                FragmentTransaction trans = FragmentManager.BeginTransaction();
+                var s = new MyDialogFragment(curItem);
+                s.Show(trans,"dialog_fragment");
             };
 
             var tabLayout = FindViewById<TabLayout> (Resource.Id.tabs);
@@ -76,9 +81,9 @@ namespace Cheesesquare
         void setupViewPager (Android.Support.V4.View.ViewPager viewPager) 
         {
             var adapter = new Adapter (SupportFragmentManager);
-            adapter.AddFragment (new IncomeFragment(), "hello");
-            adapter.AddFragment (new IncomeFragment(), "@string/tab_2");
-            adapter.AddFragment (new IncomeFragment(), "@string/tab_3");
+            adapter.AddFragment (new IncomeFragment(), GetString(Resource.String.tab_1));
+            adapter.AddFragment (new IncomeFragment(), GetString(Resource.String.tab_2));
+            adapter.AddFragment (new IncomeFragment(), GetString(Resource.String.tab_3));
             viewPager.Adapter = adapter;
         }
 
