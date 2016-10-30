@@ -6,16 +6,18 @@
     android:paddingRight="16dp"
     android:paddingTop="8dp"
     android:paddingBottom="8dp"
-    android:gravity="center_vertical">
-    <ImageView
-        android:id="@+id/avatar"
-        android:layout_width="@dimen/list_item_avatar_size"
-        android:layout_height="@dimen/list_item_avatar_size"
-        android:layout_marginRight="16dp"
-        android:layout_gravity="bottom" />
+    android:gravity="center_vertical"
+    android:orientation="vertical">
     <TextView
-        android:id="@android:id/text1"
+        android:id="@+id/text1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?attr/textAppearanceListItem" />
+        android:textSize="26dp"
+        android:textColor="#ff6d40b9"
+        android:gravity="center" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:src="@drawable/ic_dashboard" />
 </LinearLayout>

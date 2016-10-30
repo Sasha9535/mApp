@@ -78,12 +78,13 @@ namespace Cheesesquare
                 Toast.MakeText(this, "settings", ToastLength.Short).Show();
             };
         }
-        void setupViewPager (Android.Support.V4.View.ViewPager viewPager) 
+        void setupViewPager (ViewPager viewPager) 
         {
+           
             var adapter = new Adapter (SupportFragmentManager);
-            adapter.AddFragment (new IncomeFragment(), GetString(Resource.String.tab_1));
-            adapter.AddFragment (new IncomeFragment(), GetString(Resource.String.tab_2));
-            adapter.AddFragment (new IncomeFragment(), GetString(Resource.String.tab_3));
+            adapter.AddFragment (new ChargeFragment(), GetString(Resource.String.tab_1));
+            adapter.AddFragment (new ChargeFragment(), GetString(Resource.String.tab_2));
+            adapter.AddFragment (new ChargeFragment(), GetString(Resource.String.tab_3));
             viewPager.Adapter = adapter;
         }
 

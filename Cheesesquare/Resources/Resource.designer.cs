@@ -1990,9 +1990,6 @@ namespace Cheesesquare
 			// aapt resource value: 0x7f070076
 			public const int appbar = 2131165302;
 			
-			// aapt resource value: 0x7f07007b
-			public const int avatar = 2131165307;
-			
 			// aapt resource value: 0x7f07001b
 			public const int beginning = 2131165211;
 			
@@ -2139,9 +2136,6 @@ namespace Cheesesquare
 			
 			// aapt resource value: 0x7f07000b
 			public const int listMode = 2131165195;
-			
-			// aapt resource value: 0x7f07008a
-			public const int listView1 = 2131165322;
 			
 			// aapt resource value: 0x7f070041
 			public const int list_item = 2131165249;
@@ -2299,6 +2293,9 @@ namespace Cheesesquare
 			// aapt resource value: 0x7f070086
 			public const int text = 2131165318;
 			
+			// aapt resource value: 0x7f07007b
+			public const int text1 = 2131165307;
+			
 			// aapt resource value: 0x7f070084
 			public const int text2 = 2131165316;
 			
@@ -2337,6 +2334,9 @@ namespace Cheesesquare
 			
 			// aapt resource value: 0x7f070014
 			public const int useLogo = 2131165204;
+			
+			// aapt resource value: 0x7f07008a
+			public const int viewPagerCharge = 2131165322;
 			
 			// aapt resource value: 0x7f07000a
 			public const int view_offset_helper = 2131165194;

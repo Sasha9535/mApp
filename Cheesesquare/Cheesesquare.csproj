@@ -66,6 +66,9 @@
     <Compile Include="CheeseDetailActivity.cs" />
     <Compile Include="IncomeFragment.cs" />
     <Compile Include="MyDialogFragment.cs" />
+    <Compile Include="ChargeFragment.cs" />
+    <Compile Include="customViewPagerAdapter.cs" />
+    <Compile Include="SmallFragment.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

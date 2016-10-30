@@ -2418,7 +2418,6 @@ containing a value of this type.
         public static final int alertTitle=0x7f070049;
         public static final int always=0x7f07001e;
         public static final int appbar=0x7f070076;
-        public static final int avatar=0x7f07007b;
         public static final int beginning=0x7f07001b;
         public static final int bottom=0x7f07002a;
         public static final int btnDialogAdd=0x7f070074;
@@ -2468,7 +2467,6 @@ containing a value of this type.
         public static final int line1=0x7f070081;
         public static final int line3=0x7f070085;
         public static final int listMode=0x7f07000b;
-        public static final int listView1=0x7f07008a;
         public static final int list_item=0x7f070041;
         public static final int main_content=0x7f070075;
         public static final int media_actions=0x7f07007f;
@@ -2521,6 +2519,7 @@ containing a value of this type.
         public static final int tabMode=0x7f07000d;
         public static final int tabs=0x7f070078;
         public static final int text=0x7f070086;
+        public static final int text1=0x7f07007b;
         public static final int text2=0x7f070084;
         public static final int textForName=0x7f070089;
         public static final int textSpacerNoButtons=0x7f07004d;
@@ -2534,6 +2533,7 @@ containing a value of this type.
         public static final int txtAddName=0x7f070073;
         public static final int up=0x7f070009;
         public static final int useLogo=0x7f070014;
+        public static final int viewPagerCharge=0x7f07008a;
         public static final int view_offset_helper=0x7f07000a;
         public static final int viewpager=0x7f070079;
         public static final int withText=0x7f070022;
