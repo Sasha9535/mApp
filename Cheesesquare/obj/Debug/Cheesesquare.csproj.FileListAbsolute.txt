@@ -82,6 +82,7 @@ C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\bin\Debug\Xamarin.An
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\bin\Debug\Xamarin.Android.Support.v7.CardView.dll
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\bin\Debug\Xamarin.Android.Support.v7.RecyclerView.dll
+C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\Cheesesquare.csprojResolveAssemblyReference.cache
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\Cheesesquare.dll
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\Cheesesquare.pdb
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\android\bin\com.sample.cheesesquare.apk
@@ -130,7 +131,13 @@ C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\values
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\values\dimens.xml
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\values\styles.xml
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\drawable\icon.png
+C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\layout\dialogfragment.xml
+C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\drawable\buttonaddstyle.xml
+C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\drawable\edit_text_style.xml
+C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\anim\slide_up.xml
+C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\anim\slide_right.xml
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\layout\out_incomelayout.xml
+C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\layout\view_inside_viewpager.xml
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\R.cs.flag
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\uploadflags.txt
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\bin\Debug\Cheesesquare.dll.mdb
@@ -155,12 +162,5 @@ C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\android\as
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\android\assets\System.Xml.dll.mdb
-C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\Cheesesquare.csprojResolveAssemblyReference.cache
-C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\layout\dialogfragment.xml
-C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\drawable\edit_text_style.xml
-C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\anim\slide_up.xml
-C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\anim\slide_right.xml
-C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\drawable\buttonaddstyle.xml
-C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\res\layout\view_inside_viewpager.xml
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\obj\Debug\Cheesesquare.dll.mdb
 C:\Users\sasho\Documents\Projects\Cheesesquare\Cheesesquare\bin\Debug\Cheesesquare.dll.mdb

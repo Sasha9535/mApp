@@ -5,29 +5,14 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Cheesesquare\ChargeFragment.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Cheesesquare\customViewPagerAdapter.cs">
     <Files>
-      <File FileName="Cheesesquare\MainActivity.cs" Line="83" Column="12" />
-      <File FileName="Cheesesquare\customViewPagerAdapter.cs" Line="16" Column="9" />
-      <File FileName="Cheesesquare\IncomeFragment.cs" Line="20" Column="11" />
-      <File FileName="Cheesesquare\ChargeFragment.cs" Line="18" Column="1" />
-      <File FileName="Cheesesquare\SmallFragment.cs" Line="18" Column="1" />
+      <File FileName="Cheesesquare\MainActivity.cs" Line="33" Column="13" />
+      <File FileName="Cheesesquare\customViewPagerAdapter.cs" Line="46" Column="13" />
+      <File FileName="Cheesesquare\SmallFragment.cs" Line="23" Column="9" />
+      <File FileName="Cheesesquare\ChargeFragment.cs" Line="58" Column="1" />
+      <File FileName="Cheesesquare\Resources\values\Strings.xml" Line="28" Column="55" />
+      <File FileName="Cheesesquare\MyDialogFragment.cs" Line="73" Column="65" />
     </Files>
-    <Pads>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>FragmentManager</Value>
-          <Value>str</Value>
-          <Value>fragment</Value>
-          <Value>container</Value>
-          <Value>view</Value>
-          <Value>parent</Value>
-          <Value>viewPager</Value>
-          <Value>position</Value>
-          <Value>objectValue</Value>
-          <Value>cvp</Value>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
 </Properties>

@@ -8,7 +8,9 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
+using Android.Support.V4.View;
 using Android.Views;
+using Android.Views.InputMethods;
 using Android.Widget;
 
 namespace Cheesesquare
@@ -59,9 +61,17 @@ namespace Cheesesquare
             }
             Button btn = dialogview.FindViewById<Button>(Resource.Id.btnDialogAdd);
 
+            RelativeLayout layout = dialogview.FindViewById<RelativeLayout>(Resource.Id.dialog_layout);
+            layout.Click += layout_Click;
+
             var dialog = builder.Create();
             btn.Click += (sender, args) =>
               {
+                  var inflate1r = Activity.LayoutInflater;
+                  var layout1= inflate1r.Inflate(Resource.Layout.view_inside_viewPager,null);
+                  ViewPager viewPager = layout1.FindViewById<ViewPager>(Resource.Id.viewPagerCharge);
+                  customViewPagerAdapter adapter=viewPager.Adapter;
+                    adapter.
                   Toast.MakeText(Activity, "yeee", ToastLength.Long).Show();  
                   dialog.Dismiss();
               };
@@ -69,6 +79,13 @@ namespace Cheesesquare
 
 
         }
+
+        void layout_Click(object sender, EventArgs e)
+        {
+            InputMethodManager inputManager = (InputMethodManager)Activity.GetSystemService(Context.InputMethodService);
+            inputManager.HideSoftInputFromWindow(Activity.CurrentFocus.WindowToken, HideSoftInputFlags.None);
+        }
+
         public override void OnActivityCreated(Bundle savedInstanceState)
         {
             string strForTitle;

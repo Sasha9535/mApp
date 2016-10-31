@@ -36,11 +36,30 @@ namespace Cheesesquare
         {
             get { return fragments.Count; }
         }
-        //public override Java.Lang.ICharSequence GetPageTitleFormatted(int position)
-        //{
-        //    return new Java.Lang.String(fragmentTitles[position]);
-        //}
+        public override Java.Lang.ICharSequence GetPageTitleFormatted(int position)
+        {
+            return new Java.Lang.String(fragmentTitles[position]);
+        }
+        public override long GetItemId(int position)
+        {
+            return base.GetItemId(position);
 
+        }
+       //public override int GetItemPosition(Java.Lang.Object objectValue)
+       // {
+       //     SmallFragment fragment = (SmallFragment)objectValue;
+       //     String title = fragment.Tag;
+       //     int position = title.IndexOf(title);
+
+       //     if (position >= 0)
+       //     {
+       //         return position;
+       //     }
+       //     else {
+       //         return PositionNone;
+       //     }
+       // }
     }
+
 }
 

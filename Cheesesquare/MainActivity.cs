@@ -30,7 +30,7 @@ namespace Cheesesquare
 
             var toolbar = FindViewById<V7Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar (toolbar);
-
+            
             drawerLayout = FindViewById<DrawerLayout> (Resource.Id.drawer_layout);
 
             //var navigationView = FindViewById<NavigationView> (Resource.Id.nav_view);

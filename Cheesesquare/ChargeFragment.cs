@@ -4,11 +4,14 @@ using Android.Views;
 using Android.Support.V4.App;
 using System;
 using Android.Content;
+using Android.Widget;
 
 namespace Cheesesquare
 {
     public class ChargeFragment : Fragment
     {
+        customViewPagerAdapter adapter;
+        ViewPager viewPager;
         public override void OnActivityCreated(Bundle savedInstanceState)
         {
             base.OnActivityCreated(savedInstanceState);
@@ -16,88 +19,42 @@ namespace Cheesesquare
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             var view = inflater.Inflate(Resource.Layout.view_inside_viewPager, container, false);
-            //ViewGroup parent;
-            //if (view != null)
-            //{
-            //    parent = (ViewGroup)view.Parent;
-            //    if (parent != null)
-            //    {
-            //        parent.RemoveView(view);
-            //    }
-            //}
-            //else parent = container;
-            //try
-            //{
-            //    view = inflater.Inflate(Resource.Layout.view_inside_viewPager, parent, false);
-            //}
-            //catch (InflateException e)
-            //{
-
-            //}
-            var viewPager = view.FindViewById<customViewPager>(Resource.Id.viewPagerCharge);
-            //var vcp = new customViewPager(Context);
-            if (viewPager != null)
-                setupViewPager(viewPager);
-
-            return view;
+           return view;
         }
         public override void OnViewCreated(View view, Bundle savedInstanceState)
         {
-
+            viewPager = view.FindViewById<ViewPager>(Resource.Id.viewPagerCharge);
+            Button btn = view.FindViewById<Button>(Resource.Id.butForAdd);
+            Button btnDelete = view.FindViewById<Button>(Resource.Id.delete);
+            btnDelete.Click += btnDelete_Click;
+            if (btn!=null) btn.Click += btn_Click;
+            if (viewPager != null)
+                setupViewPager();
         }
-        void setupViewPager(customViewPager viewPager)
+
+        void setupViewPager()
         {
-            var adapter = new customViewPagerAdapter(ChildFragmentManager);
-            adapter.AddFragment(new SmallFragment("shop"), "first");
-            adapter.AddFragment(new SmallFragment("shoop"), "second");
-            adapter.AddFragment(new SmallFragment("sho0p"), "third");
-            adapter.AddFragment(new SmallFragment("shoo0p"), "fouth");
+            adapter = new customViewPagerAdapter(ChildFragmentManager);
+            adapter.AddFragment(SmallFragment.newInstance("1"), "first");
+            adapter.AddFragment(SmallFragment.newInstance("2"), "second");
+            adapter.AddFragment(SmallFragment.newInstance("3"), "third");
+            adapter.AddFragment(SmallFragment.newInstance("4"), "fouth");
             viewPager.Adapter = adapter;
 
         }
-    }
-    //public class  CustomViewPager: ViewPager
-    //{
-    //}
-    public class customViewPager : ViewPager
-    {
-        public customViewPager(Context ctx) : base(ctx)
+
+        void btn_Click(object sender, EventArgs e)
         {
+            adapter.AddFragment(SmallFragment.newInstance("5"), "fifth");
+
+            adapter.NotifyDataSetChanged();
         }
-        public customViewPager(Context ctx, Android.Util.IAttributeSet attrs) : base(ctx, attrs)
+
+        void btnDelete_Click(object sender, EventArgs e)
         {
-        }
-        protected override void OnMeasure(int widthMeasureSpec, int heightMeasureSpec)
-        {
-            base.OnMeasure(widthMeasureSpec, heightMeasureSpec);
-            View view = GetChildAt(0);
-            if (view != null)
-            {
-                view.Measure(widthMeasureSpec, measureHeight(heightMeasureSpec, view));
-            }
-            SetMeasuredDimension(MeasuredWidth, MeasuredHeight);
-        }
-        private int measureHeight(int measureSpec, View view)
-        {
-            int result = 0;
-            var specMode = MeasureSpec.GetMode(measureSpec);
-            int specSize = MeasureSpec.GetSize(measureSpec);
-            if (specMode == MeasureSpecMode.Exactly)
-            {
-                result = specSize;
-            }
-            else {
-                // set the height from the base view if available
-                if (view != null)
-                {
-                    result = view.MeasuredHeight;
-                }
-                if (specMode == MeasureSpecMode.AtMost)
-                {
-                    result = Math.Min(result, specSize);
-                }
-            }
-            return result;
+            int curItem = viewPager.CurrentItem;
+            //var posit=adapter.GetItemPosition(this.TargetFragment);
+            int l;
         }
     }
 
